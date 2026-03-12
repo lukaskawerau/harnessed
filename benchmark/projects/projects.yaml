@@ -1,0 +1,59 @@
+# Benchmark Target Projects
+#
+# Selection criteria:
+# - Diverse stacks and sizes
+# - Varying levels of harness readiness
+# - Actively maintained (PRs will be noticed)
+# - Permissive license (we may fork for testing)
+
+projects:
+  # TypeScript - Small
+  - name: "TBD - small TS project"
+    url: ""
+    stack: typescript
+    size: small
+    estimated_loc: 5000
+    current_readiness: low
+    notes: "Need to find a good candidate"
+
+  # TypeScript - Medium  
+  - name: "TBD - medium TS project"
+    url: ""
+    stack: typescript
+    size: medium
+    estimated_loc: 30000
+    current_readiness: medium
+    notes: ""
+
+  # Python - Medium
+  - name: "TBD - Python project"
+    url: ""
+    stack: python
+    size: medium
+    estimated_loc: 20000
+    current_readiness: low
+    notes: "Flask or FastAPI preferred"
+
+  # Java Spring - Large
+  - name: "TBD - Spring Boot project"
+    url: ""
+    stack: java-spring
+    size: large
+    estimated_loc: 100000
+    current_readiness: low
+    notes: "Enterprise-style codebase"
+
+  # Go - Medium
+  - name: "TBD - Go project"
+    url: ""
+    stack: go
+    size: medium
+    estimated_loc: 25000
+    current_readiness: high
+    notes: "Already well-structured, test skills on good codebase"
+
+# To add a project:
+# 1. Verify license allows forking
+# 2. Check maintainer responsiveness
+# 3. Assess current harness readiness
+# 4. Estimate LOC and complexity

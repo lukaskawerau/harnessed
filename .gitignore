@@ -1,0 +1,14 @@
+# Benchmark working directories
+benchmark/runs/
+/tmp/
+
+# Results (keep templates, ignore actual runs)
+# benchmark/results/*.yaml  # Uncomment to track results
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
