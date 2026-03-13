@@ -1,6 +1,6 @@
-# harnessd Benchmark
+# harnessed Benchmark
 
-Measure the effectiveness of harnessd skills by comparing agent performance with and without them.
+Measure the effectiveness of harnessed skills by comparing agent performance with and without them.
 
 ## Methodology
 
@@ -32,7 +32,7 @@ Add AGENTS.md, CI, improve documentation."
 
 **With skills:**
 ```
-Prompt: "Read skills/audit/SKILL.md from harnessd repo.
+Prompt: "Read skills/audit/SKILL.md from harnessed repo.
 Run a full harness audit on this repository.
 Then apply the recommended fixes using the fix skills."
 ```
@@ -81,7 +81,7 @@ rm -rf /tmp/benchmark-run-N
 git clone <project-url> /tmp/benchmark-run-N
 
 # 5. Run agent WITH skills, record time
-time codex "Read harnessd/skills/audit/SKILL.md and apply to this repo..."
+time codex "Read harnessed/skills/audit/SKILL.md and apply to this repo..."
 
 # 6. Compare PRs, score quality
 ```

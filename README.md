@@ -1,4 +1,4 @@
-# harnessd 🔧
+# harnessed 🔧
 
 A daemon for AI coding agents — skills to audit, fix, and optimize codebases for harness engineering.
 
