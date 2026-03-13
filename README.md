@@ -1,6 +1,6 @@
-# Harness Skills 🔧
+# harnessd 🔧
 
-A collection of skills for AI coding agents to audit, fix, and optimize codebases for harness engineering.
+A daemon for AI coding agents — skills to audit, fix, and optimize codebases for harness engineering.
 
 > ⚠️ **STATUS: Early Development** — Skills are being written and tested.
 
