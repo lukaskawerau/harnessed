@@ -2,9 +2,12 @@
 
 Check that the codebase has agent-friendly documentation.
 
+This is a context check, not a universal requirement list.
+If a repo solves navigation well without `AGENTS.md`, say that.
+
 ## What to Check
 
-### AGENTS.md
+### AGENTS.md or Equivalent
 ```bash
 # Look for agent instructions
 ls -la AGENTS.md CLAUDE.md CODEX.md .cursorrules 2>/dev/null
@@ -14,7 +17,7 @@ wc -l AGENTS.md 2>/dev/null
 ```
 
 **Score:**
-- AGENTS.md exists: +5
+- Clear agent-facing entry point exists: +5
 - > 50 lines with substance: +3
 - Points to deeper docs: +2
 
@@ -63,6 +66,6 @@ issues:
   - "No AGENTS.md found"
   - "Architecture documentation missing"
 recommendations:
-  - "Create AGENTS.md — see fix/typescript/add-agents-md.md"
-  - "Document architecture in docs/ARCHITECTURE.md"
+  - "Consider adding AGENTS.md or equivalent — see fix/typescript/add-agents-md.md"
+  - "Consider documenting architecture in docs/ARCHITECTURE.md"
 ```

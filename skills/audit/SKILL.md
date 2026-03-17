@@ -2,6 +2,9 @@
 
 Run a complete harness engineering audit on a codebase.
 
+This audit is heuristic. Do not present the score as objective truth or a universal certification.
+Use it to identify likely friction and context-sensitive improvements.
+
 ## Usage
 
 ```
@@ -15,6 +18,7 @@ Generate a report with scores and recommendations.
 2. Collect scores (A/B/C/D) per category
 3. Calculate overall harness readiness score (0-100)
 4. Generate actionable recommendations
+5. Explicitly note where local context changes the recommendation
 
 ## Audit Checklist
 
@@ -51,12 +55,17 @@ Generate a report with scores and recommendations.
 
 ## Scoring
 
+Treat scores as rough directional signals:
+- high score != universally correct setup
+- low score != failure if tradeoffs are intentional
+- always explain the repo-specific reasoning behind the score
+
 | Grade | Score | Meaning |
 |-------|-------|---------|
-| A | 80-100 | Agent-ready, minimal friction |
-| B | 60-79 | Functional, some gaps |
-| C | 40-59 | Significant work needed |
-| D | 0-39 | Major overhaul required |
+| A | 80-100 | Strong fit for agent workflows in current form |
+| B | 60-79 | Functional, some likely friction |
+| C | 40-59 | Several improvements worth considering |
+| D | 0-39 | High friction for many agent workflows |
 
 ## Output Format
 
@@ -71,6 +80,10 @@ Generate a report with scores and recommendations.
 
 [2-3 sentence overview]
 
+Include:
+- what this score does and does not mean
+- which findings are context-dependent
+
 ## Category Scores
 
 | Category | Grade | Score | Key Issues |
@@ -81,9 +94,9 @@ Generate a report with scores and recommendations.
 
 ## Priority Recommendations
 
-1. **[High]** Add AGENTS.md — see `fix/typescript/add-agents-md.md`
-2. **[High]** Speed up CI — see `optimize/ci-speedup.md`
-3. **[Medium]** Add structured logging — see `fix/typescript/structured-logging.md`
+1. **[High]** Consider adding AGENTS.md — see `fix/typescript/add-agents-md.md`
+2. **[High]** Consider speeding up CI — see `optimize/ci-speedup.md`
+3. **[Medium]** Consider structured logging — see `fix/typescript/structured-logging.md`
 
 ## Detailed Findings
 

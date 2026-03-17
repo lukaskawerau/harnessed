@@ -2,10 +2,14 @@
 
 Create an AGENTS.md file that helps AI agents navigate the codebase.
 
+This is a suggested fix, not a universal mandate.
+Use it when the repo would benefit from a clearer agent entry point.
+
 ## When to Use
 
 - Audit found: "No AGENTS.md"
 - Starting harness engineering on a TypeScript/Node project
+- The repo lacks another clear agent-facing map
 
 ## Steps
 
@@ -32,12 +36,12 @@ Look for:
 
 ### 3. Generate AGENTS.md
 
-Create file with this structure:
+Create a file with a structure like this, then adapt it to the repo:
 
 ```markdown
 # AGENTS.md — [Project Name]
 
-This is your map. Follow it.
+This is a starting map for agents. Adapt to local conventions.
 
 ## What is [Project Name]?
 
@@ -84,6 +88,8 @@ pnpm lint         # Run linter
 3. Read related test files for examples
 ```
 
+If the repo already has strong navigation via `README.md`, `docs/`, or another agent file, prefer improving that over adding duplicate instructions.
+
 ### 4. Verify
 
 ```bash
@@ -99,3 +105,4 @@ cat AGENTS.md
 - [ ] Lists key commands
 - [ ] Maps repository structure
 - [ ] Points to key files
+- [ ] Language reflects repo-specific guidance, not generic mandates

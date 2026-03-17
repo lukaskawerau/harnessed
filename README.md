@@ -1,6 +1,6 @@
 # harnessed 🔧
 
-A daemon for AI coding agents — skills to audit, fix, and optimize codebases for harness engineering.
+Skills for AI coding agents to audit, improve, and optimize repo setup for harness engineering.
 
 > ⚠️ **STATUS: Early Development** — Skills are being written and tested.
 
@@ -12,7 +12,12 @@ When you point [Orchestra](https://github.com/lukaskawerau/orchestra) or [Sympho
 2. **How to fix it?** (fix — stack-specific)
 3. **How to make it faster?** (optimize)
 
-These skills teach agents how to do harness engineering on any codebase.
+These skills help agents reason about harness engineering on a codebase.
+
+Important framing:
+- "harness ready" here is not an absolute certification
+- the right setup depends on the repo, team, stack, and workflow
+- skills should guide judgment and tradeoff analysis, not force uniform checklists
 
 ## Quick Start
 
@@ -31,7 +36,7 @@ Read skills/audit/SKILL.md and run a complete harness audit on this repository.
 ## Skills
 
 ### Audit Skills
-Assess a repo's agent-readiness.
+Assess a repo's likely agent-readiness using heuristics, not absolute truth.
 
 | Skill | What it checks |
 |-------|----------------|
@@ -70,6 +75,8 @@ We test these skills against real OSS projects to measure effectiveness.
 1. Agent attempts harness engineering WITHOUT skills
 2. Agent attempts same task WITH skills (fresh checkout)
 3. Compare: time, quality, bugs introduced
+
+The benchmark is about whether the guidance helps agents make better decisions faster, not whether the repo conforms to one universal definition of "ready."
 
 See `benchmark/` for projects and results.
 

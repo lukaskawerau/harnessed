@@ -1,6 +1,7 @@
 # harnessed Benchmark
 
 Measure the effectiveness of harnessed skills by comparing agent performance with and without them.
+The goal is better repo-specific judgment, not conformity to one absolute definition of "harness ready."
 
 ## Methodology
 
@@ -26,15 +27,15 @@ Measure the effectiveness of harnessed skills by comparing agent performance wit
 **Without skills (baseline):**
 ```
 Prompt: "Add harness engineering to this repository. 
-Make it ready for AI coding agents. 
-Add AGENTS.md, CI, improve documentation."
+Improve it for AI coding agents. 
+Recommend and apply context-appropriate changes such as AGENTS.md, CI, or documentation."
 ```
 
 **With skills:**
 ```
 Prompt: "Read skills/audit/SKILL.md from harnessed repo.
 Run a full harness audit on this repository.
-Then apply the recommended fixes using the fix skills."
+Then apply the recommended fixes using the fix skills, adapting them to this repo."
 ```
 
 ### Controls

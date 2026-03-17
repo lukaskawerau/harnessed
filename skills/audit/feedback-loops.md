@@ -2,6 +2,9 @@
 
 Check that the codebase has fast, reliable feedback mechanisms.
 
+Interpret results in context.
+Small tools, libraries, prototypes, and heavy enterprise systems will not want the same loop design.
+
 ## What to Check
 
 ### CI/CD Pipeline

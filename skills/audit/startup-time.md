@@ -6,11 +6,13 @@ Measure how long it takes to boot a development environment.
 
 Symphony/Orchestra create isolated workspaces per task. If startup takes 10 minutes, agent throughput collapses.
 
-**Targets:**
+Default heuristics, not hard rules:
 - Ideal: < 30 seconds
 - Acceptable: < 60 seconds  
 - Problematic: < 5 minutes
 - Blocking: > 5 minutes
+
+Some repos intentionally trade startup time for safety, fidelity, or infra parity. Call that out when relevant.
 
 ## What to Measure
 
